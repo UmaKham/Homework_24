@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .mainDiv {
+            width: 100%;
+            height: 400px;
+            border-radius: 14px;
+            background-color: whitesmoke;
+            position: relative;
+        }
+
+        .mainImg {
+            width: 100%;
+            height: 161px;
+            object-fit: contain;
+        }
+
+        .middleDiv {
+            width: 100%;
+            height: 50%;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px 20px 20px 20px;
+            border-end-end-radius: 14px;
+            border-end-start-radius: 14px;
+        }
+
+        .h1 {
+            font-size: 20px;
+            font-weight: 900;
+            color: white;
+            text-align: left;
+        }
+
+        .p {
+            font-size: 14px;
+            font-weight: 300;
+            color: whitesmoke;
+        }
+
+        .bottomDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .bottomDivBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .boxP {
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .btn {
+            width: 100%;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+        }
+
+        .boxImg {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        b {
+            color: orange;
+            cursor: pointer;
+        }
+
+        .title{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .button_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button{
+            background-color: white;
+            padding: 13px;
+            border-radius: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: white;
+            box-shadow: 0 0 15px black;
+            transition: .5s ease;
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .btn_clicked{
+            background-color: blue;
+        }
+
+        .basket_btn{
+            background: url(./icons/basket.png);
+            background-size: contain;
+            width: 80px;
+            height: 80px;
+            border: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .basket_btn:hover{
+            box-shadow: 0 0 15px grey;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product"></div>
+
+    </div>
+
+    <script src="./db.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
